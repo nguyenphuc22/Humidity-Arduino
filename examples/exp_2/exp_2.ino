@@ -18,12 +18,12 @@ void setup() {
 // the loop function runs over and over again until power down or reset
 void loop() {
 
-  Serial.println(analogRead(water_sensor_1));
-  if (humidity.hasWarter(water_sensor_1))
+  int analog = analogRead(water_sensor_1);
+  if (humidity.Suitable_humidity(humidity.parseHumidity(analog)))
   {
-    Serial.println("Has Warter");
+    Serial.println("Suitable humidity");
   }
   else {
-    Serial.println("Has't Warter");
+    Serial.println("Not suitable humidity");
   }
 }
