@@ -30,6 +30,7 @@ bool Humidity::hasWarter(int sensor)
 	{
 		return true;
 	}
+	return false;
 }
 
 // return value Humidity

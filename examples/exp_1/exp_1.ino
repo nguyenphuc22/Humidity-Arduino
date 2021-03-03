@@ -7,17 +7,18 @@
 #include <Humidity.h> //https://github.com/nguyenphuc22/Humidity-Arduino
 
 const int water_sensor_1 = A0;
-
+Humidity humidity;
 // the setup function runs once when you press reset or power the board
 void setup() {
   Serial.begin(9600);
-  Humidity humidity;
+  
   pinMode(water_sensor_1, INPUT);
 }
 
 // the loop function runs over and over again until power down or reset
 void loop() {
 
+  Serial.println(analogRead(water_sensor_1));
   if (humidity.hasWarter(water_sensor_1))
   {
     Serial.println("Has Warter");
