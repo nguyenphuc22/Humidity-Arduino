@@ -3,6 +3,7 @@
 
 class Humidity
 {
+public:
 	//From analog to humidity
 	float parseHumidity(int analog);
 
