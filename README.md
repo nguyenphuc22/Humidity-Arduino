@@ -9,3 +9,7 @@ Function:
 - int readHumidity(int sensor) : // return int value Humidity
 - bool Suitable_humidity(float humidity): //Check if current humidity is suitable for plants
 
+Instructions to install the library:
+
+1. Download Library: https://github.com/nguyenphuc22/Humidity-Arduino -> Download ZIP
+2. Open Adruino IDE -> Sketch -> Include Library -> Add ZIP Library -> Humidity-Arduino-main
